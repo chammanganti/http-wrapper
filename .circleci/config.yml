@@ -1,0 +1,23 @@
+version: 2.1
+
+jobs:
+  "test":
+    parameters:
+      version:
+        type: string
+        default: "latest"
+    docker:
+      - image: "circleci/golang:<< parameters.version >>"
+    working_directory: /go/src/github.com/chammanganti/http-wrapper
+    steps:
+      - checkout
+      - run: go version
+      - run: go test ./...
+
+workflows:
+  tests:
+    jobs:
+      - test:
+          matrix:
+            parameters:
+              version: ["latest", "1.15", "1.14"]
