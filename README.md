@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/chammanganti/http-wrapper.svg?style=svg)](https://circleci.com/gh/chammanganti/http-wrapper)
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/chammanganti/http-wrapper)](https://pkg.go.dev/github.com/chammanganti/http-wrapper)
 
 # http-wrapper
