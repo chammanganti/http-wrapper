@@ -1,3 +1,5 @@
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/chammanganti/http-wrapper)](https://pkg.go.dev/github.com/chammanganti/http-wrapper)
+
 # http-wrapper
 A simple wrapper for net/http.
 
