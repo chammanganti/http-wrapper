@@ -41,6 +41,7 @@ func (r *HTTPWrapper) METHODS(methods []string, f http.HandlerFunc) http.Handler
 	return handleMethod(f, methods...)
 }
 
+// handleMethod -
 func handleMethod(f http.HandlerFunc, methods ...string) http.HandlerFunc {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		for _, method := range methods {
